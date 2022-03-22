@@ -8,44 +8,164 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>Pokedex Launch X</h1>
-    <input type="text" placeholder="pikachu" id="pokename" name="pokename" />
-    <br />
-    <br />
-    <img
-      src="./images/Pokebola-pokeball-png-0.png"
-      alt="pokeball"
-      width="10%"
-      id="pokeImg"
-    />
-    <br /><br />
-    <button onclick="fetchPokemon()">cambiar pokemon</button> <br />
-    <br />
-    <section class="datos">
-      <div id="pokeNombre"></div>
-      <br />
-      <div id="pokeId"></div>
-      <br />
-      <div id="pokeType"></div>
-      <br />
-      <div id="pokeHp"></div>
-      <br />
-      <div id="pokeAttack"></div>
-      <br />
-      <div id="pokeDefense"></div>
-      <br />
-      <div id="pokeMove"></div>
-      <br />
-      <div id="pokeSpeed"></div>
-      <br />
-      <div id="pokeSAttack"></div>
-      <br />
-      <div id="pokeSDefense"></div>
-      <br />
-      <div id="pokeWeight"></div>
-      <br />
-      <div id="pokeHeight"></div>
-    </section>
+    <header class="header">
+      <section>
+        <div>
+          <img
+            class="logoPokemon"
+            src="./images/pokemonLogo-removebg-preview.png"
+            alt=""
+          />
+          <img
+            src="./images/Pokebola-pokeball-png-0.png"
+            alt=""
+            class="pokeball"
+          />
+        </div>
+      </section>
+      <div class="title">
+        <h1 class="titleH1">Pokedex Launch X</h1>
+      </div>
+    </header>
+
+    <!--pokedex-->
+    <div class="flex">
+      <main class="pokedexMitad1">
+        <div class="topPokedex flex">
+          <section>
+            <div class="circle">
+              <div class="circle1"></div>
+            </div>
+          </section>
+          <section class="flex">
+            <div class="circle2 circleSmall">
+              <div class="circle1Chico"></div>
+            </div>
+            <div class="circle3 circleSmall">
+              <div class="circle1Chico"></div>
+            </div>
+            <div class="circle4 circleSmall">
+              <div class="circle1Chico"></div>
+            </div>
+          </section>
+        </div>
+        <hr class="line" />
+        <section class="pokemonPantalla">
+          <div class="pantalla">
+            <div class="displayPantalla">
+              <img
+                src="./images/Pokebola-pokeball-png-0.png"
+                alt="pokeball"
+                width="10%"
+                id="pokeImg"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="pantalla2">
+          <div class="flex">
+            <div class="flexAlign">
+              <div class="circle circle1 marginTop"></div>
+            </div>
+
+            <div class="padding">
+              <div class="flex gap">
+                <div class="rectangulo flexAlign">SELECT</div>
+                <div class="rectangulo flexAlign">START</div>
+              </div>
+              <br />
+              <input
+                type="text"
+                placeholder="write your pokemon here or number"
+                id="pokename"
+                name="pokename"
+                class="buscador"
+              />
+              <br />
+              <br />
+              <div class="flexAlign">
+                <button class="botonBuscar" onclick="fetchPokemon()">
+                  Change Pokemon
+                </button>
+                <br />
+              </div>
+            </div>
+            <div class="flexAlign">
+              <div class="control4 flexContainer">
+                <div class="control5"></div>
+                <div class="control6 flexContainer boxShadow"><div></div></div>
+                <div class="control5"></div>
+                <div class="control6 flexContainer boxShadow"><div></div></div>
+                <div class="control6"><div class="circleIn"></div></div>
+                <div class="control6 flexContainer"><div></div></div>
+                <div class="control5"></div>
+                <div class="control6 flexContainer boxShadow"><div></div></div>
+                <div class="control5"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <main class="pokedexEnMedio"></main>
+
+      <!--pokedex mitad 2-->
+      <main class="pokedexMitad2">
+        <div>
+          <header class="pokemonInfo">
+            <section class="pokeInfoName">
+              <div id="pokeNombre" class="name"></div>
+              <div id="pokeId"></div>
+            </section>
+            <div class="pokeType" id="pokeType"></div>
+            <section>
+              <ul class="flex">
+                <li id="pokeHp"></li>
+                <li id="pokeAttack"></li>
+                <li id="pokeDefense"></li>
+                <li id="pokeMove"></li>
+                <li id="pokeSpeed"></li>
+                <li id="pokeSAttack"></li>
+                <li id="pokeSDefense"></li>
+              </ul>
+            </section>
+          </header>
+
+          <div class="bottonsTable">
+            <div class="botton boton1"></div>
+            <div class="botton"></div>
+            <div class="botton"></div>
+            <div class="botton"></div>
+            <div class="botton boton5"></div>
+            <div class="botton boton6"></div>
+            <div class="botton"></div>
+            <div class="botton"></div>
+            <div class="botton"></div>
+            <div class="botton boton10"></div>
+          </div>
+
+          <div class="btonTable">
+            <div class="bton"></div>
+            <div class="bton"></div>
+          </div>
+
+          <section class="botonesSinFuncion">
+            <div class="flex btonTableSecundario">
+              <div class="botonSecundario botonSecundario1"></div>
+              <div class="botonSecundario botonSecundario2"></div>
+            </div>
+            <div class="circle4 circleSmall">
+              <div class="circle1Chico"></div>
+            </div>
+          </section>
+
+          <div class="weightHeight">
+            <div class="inputWH flexAlign" id="pokeHeight"></div>
+            <div class="inputWH flexAlign" id="pokeWeight"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+
     <footer>
       <script src="./index.js"></script>
     </footer>

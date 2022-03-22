@@ -6,11 +6,7 @@ const fetchPokemon = () => {
   // LLAMADA DEL API
   fetch(url)
     .then((res) => {
-      if (res.status != "200") {
-        console.log(res);
-        pokeImage("./pikachu-llorando.gif");
-        `no se encontro`;
-      } else {
+      {
         return res.json();
       }
     })
@@ -56,8 +52,14 @@ const fetchPokemon = () => {
       pokeWeight(weight);
 
       //img
-      let pokeImg = data.sprites.front_default;
+      let pokeImg = data.sprites.other.home.front_default;
       pokeImage(pokeImg);
+    })
+
+    .catch((error) => {
+      console.log(error, "llamada fallo");
+      pokeImage("./images/pikachu-llorando.gif");
+      // const error = document.getElementById("mensajeError");
     });
 };
 
@@ -69,58 +71,58 @@ const pokeImage = (url) => {
 };
 const pokeNombre = (name) => {
   const pokeNombre = document.getElementById("pokeNombre");
-  pokeNombre.innerHTML = `Name = ${name.toUpperCase()}`;
+  pokeNombre.innerHTML = `NAME: ${name.toUpperCase()}`;
 };
 
 const pokeId = (id) => {
   const pokeId = document.getElementById("pokeId");
-  pokeId.innerHTML = `ID = ${id}`;
+  pokeId.innerHTML = `ID : ${id}`;
 };
 
 const pokeType = (type) => {
   const pokeType = document.getElementById("pokeType");
-  pokeType.innerHTML = `Type = ${type}`;
+  pokeType.innerHTML = `Type : ${type.toUpperCase()}`;
 };
 
 const pokeSpeed = (speed) => {
   const pokeSpeed = document.getElementById("pokeSpeed");
-  pokeSpeed.innerText = `Speed = ${speed}`;
+  pokeSpeed.innerText = `Speed  ${speed}`;
 };
 
 const pokeSpecialDefense = (specialDefense) => {
   const pokeSpecialDefense = document.getElementById("pokeSDefense");
-  pokeSpecialDefense.innerHTML = `Special defense = ${specialDefense}`;
+  pokeSpecialDefense.innerHTML = `Special defense  ${specialDefense}`;
 };
 
 const pokeWeight = (weight) => {
   const pokeWeight = document.getElementById("pokeWeight");
-  pokeWeight.innerHTML = `Weight = ${weight} `;
+  pokeWeight.innerHTML = `Weight : ${weight} `;
 };
 
 const pokeHeight = (height) => {
   const pokeHeight = document.getElementById("pokeHeight");
-  pokeHeight.innerHTML = `Height = ${height} `;
+  pokeHeight.innerHTML = `Height : ${height} `;
 };
 
 const pokeSpecialAttack = (specialAttack) => {
   const pokeSpecialAttack = document.getElementById("pokeSAttack");
-  pokeSpecialAttack.innerHTML = `Special attack = ${specialAttack}`;
+  pokeSpecialAttack.innerHTML = `Special attack  ${specialAttack}`;
 };
 
 const pokeMove = (move) => {
   const pokeMove = document.getElementById("pokeMove");
-  pokeMove.innerHTML = `Move = ${move}`;
+  pokeMove.innerHTML = `Move ${move}`;
 };
 
 const pokeHp = (hp) => {
   const pokeHp = document.getElementById("pokeHp");
-  pokeHp.innerHTML = `Hp = ${hp}`;
+  pokeHp.innerHTML = `Hp <br>   ${hp}`;
 };
 const pokeAttack = (attack) => {
   const pokeAttack = document.getElementById("pokeAttack");
-  pokeAttack.innerHTML = `Attack = ${attack}`;
+  pokeAttack.innerHTML = `Attack  ${attack}`;
 };
 const pokeDefense = (defense) => {
   const pokeDefense = document.getElementById("pokeDefense");
-  pokeDefense.innerHTML = `Defense = ${defense}`;
+  pokeDefense.innerHTML = `Defense  ${defense}`;
 };

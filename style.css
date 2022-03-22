@@ -1,5 +1,369 @@
+.flex {
+  display: flex;
+}
+.flexContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.boxShadow {
+  box-shadow: -4px 4px 1px 2px black;
+}
+.flexAlign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textAlign {
+  text-align: center;
+}
+.gap {
+  gap: 0.5rem;
+}
+.padding {
+  padding: 2rem;
+}
+.marginTop {
+  margin-top: 2rem;
+}
+.header {
+  background-color: rgb(219, 34, 34);
+  text-align: center;
+  padding-top: 2rem;
+}
+
 .datos {
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+.logoPokemon {
+  width: 30%;
+}
+.pokeball {
+  width: 10%;
+  height: 10%;
+}
+.title {
+  padding: 25px;
+  background-color: rgb(31, 29, 29);
+  color: rgb(219, 34, 34);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pokedexMitad1 {
+  background-color: rgb(219, 34, 34);
+  border-radius: 5%;
+  width: 40%;
+  height: 700px;
+  margin-top: 50px;
+  border: 2.5px black solid;
+}
+.pokedexEnMedio {
+  background-color: rgb(219, 34, 34);
+  height: 600px;
+  width: 5%;
+  margin-top: 150px;
+  border: 2px black solid;
+  border-radius: 20px;
+}
+
+.pokedexMitad2 {
+  background-color: rgb(219, 34, 34);
+  border-radius: 5% 5% 5% 5%;
+  width: 40%;
+  height: 600px;
+  margin-top: 150px;
+  border: 2.5px black solid;
+}
+.mensajeError {
+  display: none;
+}
+
+.topPokedex {
+  background-color: rgb(194, 10, 10);
+  width: 60%;
+  height: 11%;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+  border: 1px black solid;
+}
+.circle {
+  border-radius: 50%;
+  background-color: aqua;
+  width: 5rem;
+  height: 5rem;
+  border: 2px black solid;
+  margin: 1rem;
+}
+.circle1 {
+  border-radius: 50%;
+  background-color: white;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+  box-shadow: -6px 1px 3px -1px;
+}
+.circle1Chico {
+  border-radius: 50%;
+  background-color: white;
+  width: 1.2rem;
+  height: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.4rem;
+  box-shadow: -6px 1px 3px -1px;
+}
+.circleSmall {
+  border-radius: 50%;
+  border: 1px black solid;
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem;
+}
+.circle2 {
+  background-color: blue;
+}
+.circle3 {
+  background-color: green;
+}
+.circle4 {
+  background-color: yellow;
+}
+
+.pokemonPantalla {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+.pantalla {
+  background-color: #f1f2d3;
+  border-radius: 10px;
+  width: 25rem;
+  height: 15rem;
+  border: 30px #dedede solid;
+  box-shadow: -12px 8px 5px 4px;
+  display: flex;
+  justify-content: center;
+}
+.pantalla2 {
+  background-color: rgb(50, 90, 200);
+  border-radius: 10px;
+  width: 27rem;
+  height: 11rem;
+  border: 2px black solid;
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+#pokeImg {
+  width: 60%;
+  height: 95%;
+}
+.displayPantalla {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px black solid;
+  border-radius: 5px;
+}
+
+.rectangulo {
+  border-radius: 10px;
+  width: 5rem;
+  height: 1.2rem;
+  background-color: green;
+  text-align: center;
+  color: white;
+  font-size: 0.7rem;
+
+  border: 1px black solid;
+}
+.buscador {
+  width: 10rem;
+  height: 2rem;
+  border: none;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  font-size: 9px;
+  font-weight: 400;
+  font-family: arial;
+  text-align: center;
+}
+.botonBuscar {
+  width: 6rem;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  font-size: 11px;
+  font-weight: 600;
+  font-family: arial;
+  text-align: center;
+  box-shadow: 6px 6px 4px -1px black;
+}
+.botonBuscar:hover {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  border-color: black;
+}
+.control4 {
+  flex-wrap: wrap;
+  background-color: rgb(50, 90, 200);
+  margin: 0px;
+  width: 100px;
+  height: 100px;
+  border-radius: 0;
+}
+.control5 {
+  margin: 0px;
+  width: 33.3px;
+  height: 33.3px;
+  border-radius: 0;
+}
+.control6 {
+  background-color: #262626;
+  margin: 0px;
+  width: 33.3px;
+  height: 33.3px;
+  border-radius: 4px;
+}
+.circleIn {
+  margin: 6px;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  border: 1px black solid;
+  background-color: black;
+}
+
+/* segunda parte del pokedex*/
+ul {
+  list-style: none;
+  gap: 6px;
+  padding: 16px 16px;
+}
+
+li {
+  width: 4rem;
+}
+/* informacion del pokemon */
+
+.pokeInfoName {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.pokemonInfo {
+  margin: auto;
+  margin-top: 1.9rem;
+  border-radius: 10px;
+  background-color: #032d29;
+  width: 430px;
+  height: 180px;
+  color: #f1f2d3;
+}
+
+.pokeType {
+  padding-left: 1rem;
+}
+#pokeHp {
+  width: 2rem;
+}
+
+.bottonsTable {
+  margin: auto;
+  margin-top: 1rem;
+  border-radius: 10px;
+  background-color: #31a7f1;
+  width: 430px;
+  height: 110px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.botton {
+  width: 84.6px;
+  height: 53px;
+  border: 0.8px solid black;
+}
+
+.botton:hover {
+  background-color: #2179af;
+  transform: scale(105%);
+  transition: transform 200ms ease-in-out;
+}
+.boton1 {
+  border-radius: 10px 0px 0px 0px;
+}
+.boton5 {
+  border-radius: 0px 10px 0px 0px;
+}
+.boton6 {
+  border-radius: 0px 0px 0px 10px;
+}
+.boton10 {
+  border-radius: 0px 0px 10px 0px;
+}
+
+.btonTable {
+  display: flex;
+  justify-content: right;
+  padding-right: 35px;
+  gap: 4px;
+}
+.botonesSinFuncion {
+  display: flex;
+  justify-content: space-between;
+}
+
+.botonesSinFuncion > .circle4 {
+  margin-right: 3rem;
+  margin-top: 1.5rem;
+}
+.bton {
+  width: 5rem;
+  height: 1rem;
+  background-color: #313131;
+  border-radius: 9px;
+}
+.btonTableSecundario {
+  padding-left: 2rem;
+}
+
+.botonSecundario {
+  width: 5rem;
+  height: 3rem;
+  background-color: #dedede;
+  box-shadow: 5px 3px 3px 1px black;
+}
+.botonSecundario1 {
+  border-right: 1px solid black;
+  border-radius: 5px 0px 0px 5px;
+}
+.botonSecundario2 {
+  border-radius: 0px 5px 5px 0px;
+}
+
+.weightHeight {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.inputWH {
+  border-radius: 5px;
+  width: 10rem;
+  height: 4rem;
+  background-color: black;
+  color: #fcda02;
 }
