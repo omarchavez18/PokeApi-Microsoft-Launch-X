@@ -31,7 +31,10 @@
   text-align: center;
   padding-top: 2rem;
 }
-
+.pokedex {
+  display: flex;
+  justify-content: center;
+}
 .datos {
   display: flex;
   flex-direction: column;
@@ -163,8 +166,7 @@
   margin: 2rem;
 }
 #pokeImg {
-  width: 60%;
-  height: 95%;
+  width: 64%;
 }
 .displayPantalla {
   display: flex;
@@ -182,7 +184,6 @@
   text-align: center;
   color: white;
   font-size: 0.7rem;
-
   border: 1px black solid;
 }
 .buscador {
@@ -220,7 +221,7 @@
   background-color: rgb(50, 90, 200);
   margin: 0px;
   width: 100px;
-  height: 100px;
+
   border-radius: 0;
 }
 .control5 {
@@ -245,6 +246,10 @@
   background-color: black;
 }
 
+.botonesSelect {
+  display: flex;
+  gap: 2px;
+}
 /* segunda parte del pokedex*/
 ul {
   list-style: none;
@@ -366,4 +371,101 @@ li {
   height: 4rem;
   background-color: black;
   color: #fcda02;
+}
+
+@media (max-width: 480px) {
+  .pokedex {
+    display: flex;
+    flex-direction: column;
+  }
+  .pokedexMitad1 {
+    width: 388px;
+    height: 577px;
+    margin-top: 26px;
+  }
+  #pokeImg {
+    width: 68%;
+  }
+  .pantalla {
+    height: 12rem;
+  }
+  .circle {
+    width: 4rem;
+    height: 4rem;
+    margin: 0px;
+  }
+  .circle1 {
+    width: 3rem;
+    height: 3rem;
+  }
+  .pantalla2 {
+    width: 19.5rem;
+    height: 9rem;
+  }
+  .control4 {
+    width: 103px;
+  }
+  .control5 {
+    width: 25.3px;
+    height: 25.3px;
+  }
+  .control6 {
+    width: 30.3px;
+    height: 30.3px;
+  }
+  .padding {
+    padding: 0px;
+    padding-top: 1.5rem;
+  }
+  .rectangulo {
+    width: 4rem;
+    height: 1rem;
+    font-size: 0.6rem;
+  }
+  .botonesSelect {
+    justify-content: center;
+    gap: 6px;
+  }
+  .buscador {
+    width: 7.5rem;
+    padding-left: 8px;
+  }
+  .botonBuscar {
+    width: 5.1rem;
+    font-size: 8px;
+    height: 1.5rem;
+  }
+  .circleIn {
+    margin: 4px;
+  }
+
+  .pokedexEnMedio {
+    display: none;
+  }
+  .pokedexMitad2 {
+    width: 388px;
+    margin-top: 2rem;
+    height: 540px;
+  }
+  .pokemonInfo {
+    width: 355px;
+    height: 150px;
+    font-size: 12px;
+  }
+  .bottonsTable {
+    width: 355px;
+  }
+  .botton {
+    width: 69.6px;
+  }
+
+  .botonSecundario {
+    width: 3rem;
+    height: 2rem;
+  }
+  .inputWH {
+    width: 9rem;
+    height: 3rem;
+    font-size: 12px;
+  }
 }
